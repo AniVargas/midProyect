@@ -5,84 +5,151 @@
 *{
     margin: 0;
     padding: 0;
-    background-color: #E5E5E5;
+    background-color: var(--fondo-);
 }
 
-/*mobil */
-
+/*Mobil */
+@media (max-width: 500px){
 nav{
     width: 100vw;
-    height: 60px;
+    height: 50px;
     position: fixed;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content:center; 
+    align-items: end;
     #navbar{
-        height: 50%;
-        width: 90vw;
+        height: 100%;
+        width: 100vw;
         display: flex;
         justify-content: space-between;
+        align-items: end;
     img {
-        height: 15px;
-        padding: 5px;
-    }
-    ul{
-        padding: 5px;
-        display: flex;
-        justify-content: space-between;
-        list-style: none;
-        li{
-            margin-left: 1.5rem;
-        }
-        a{
-            text-decoration: none;
-            color: #6B708D;
-        }
-    }
-    }
-
-}
-button.blue{
-    background-color: var(--azulfuerte-);
-    color: #ffff;
-    border: 0;
-    align-self: start;
-    padding: 5px;
-    }
-
-/*
-nav{
-    width: 100vw;
-    height: 60px;
-    position: fixed;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    #navbar{
-        height: 50%;
-        width: 90vw;
-        display: flex;
-        justify-content: space-between;
-    img {
-        height: 20px;
-    }
+        width:50px ;  
+        padding-left: 15px;
+        padding-bottom: 15px;      
+            }
     ul{
         display: flex;
         justify-content: space-between;
         list-style: none;
         li{
-            margin-left: 1.5rem;
+            margin-left: 1.8vw;
+            margin-right: 1.8vw;
+            font-family: "Roboto";
+            font-size: 16px;
+            font-weight: 500;
+            padding-bottom: 15px;
         }
+    
         a{
             text-decoration: none;
-            color: #6B708D;
+            color:var(--letra-);
+            }
+            .selected{
+                color:var(--azulfuerte-);
+                  }
+    }
+    }
+}
+}
+/*compu */
+@media (min-width: 500px){
+    nav{
+        width: 100vw;
+        height: 70px;
+        position: fixed;
+        display: flex;
+        justify-content:center; 
+        align-items: end;
+        #navbar{
+            height: 50%;
+            width: 74vw;
+            display: flex;
+            justify-content: space-between;
+            align-items: end;
+        img {
+            width:50px ;  
+            padding-bottom: 15px;      
+                }
+        ul{
+            display: flex;
+            justify-content: space-between;
+            list-style: none;
+            li{
+                margin-left: 1.8vw;
+                margin-right: 1.8vw;
+                font-family: "Roboto";
+                font-size: 16px;
+                font-weight: 500;
+                padding-bottom: 15px;
+            }
+        
+            a{
+                text-decoration: none;
+                color:var(--letra-);
+                }
+                .selected{
+                    color:var(--azulfuerte-);
+                      }
         }
-    }
-    }
-
+        }
+    }    
 }
 button.blue{
     background-color: var(--azulfuerte-);
     color: #ffff;
-   }
-*/
+    font-family: "Roboto";
+    font-size: 16px;
+    font-weight: 500;
+    border-width: 15px;
+    border-style:solid;
+    border-color: var(--azulfuerte-);
+    font-family: roboto;
+    align-self: flex-end;
+    white-space: nowrap;
+    }
+button.white{
+    background-color: var(--fondo-);
+    color:var(--letra-) ;
+    font-family: "Roboto";
+    font-size: 16px;
+    font-weight: 500;
+    border-width: 15px;
+    border-style:solid;
+    border-color: var(--fondo-);
+    font-family: roboto;
+    align-self: flex-end;
+    }
+
+/*compu*/
+header{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 60px;
+    section{
+        width: 74vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    #copy{
+        width: 34vw;
+        margin-top: 4vw;
+        margin-bottom: 4vw;
+        h1, p, button{
+            margin-top: 2.5vw;
+        }
+
+    }
+    #foto-cliente{
+        width: 34vw;
+        background-image: url(/midProyect/project-assets/hero-section/hero-image.png);
+        background-size: cover;
+        img{
+            width: 100px;
+        }
+
+    }
+}
