@@ -7,7 +7,6 @@
     padding: 0;
     background-color: var(--fondo-);
 }
-
 /*Mobil */
 @media (max-width: 500px){
 nav{
@@ -26,7 +25,7 @@ nav{
     img {
         width:50px ;  
         padding-left: 15px;
-        padding-bottom: 15px;      
+        padding-bottom: 1vw;      
             }
     ul{
         display: flex;
@@ -38,7 +37,7 @@ nav{
             font-family: "Roboto";
             font-size: 16px;
             font-weight: 500;
-            padding-bottom: 15px;
+            padding-bottom: 1vw;
         }
     
         a{
@@ -69,7 +68,7 @@ nav{
             align-items: end;
         img {
             width:50px ;  
-            padding-bottom: 15px;      
+            padding-bottom: 1vw;      
                 }
         ul{
             display: flex;
@@ -81,7 +80,7 @@ nav{
                 font-family: "Roboto";
                 font-size: 16px;
                 font-weight: 500;
-                padding-bottom: 15px;
+                padding-bottom: 1vw;
             }
         
             a{
@@ -101,7 +100,7 @@ button.blue{
     font-family: "Roboto";
     font-size: 16px;
     font-weight: 500;
-    border-width: 15px;
+    border-width: 1vw;
     border-style:solid;
     border-color: var(--azulfuerte-);
     font-family: roboto;
@@ -114,7 +113,7 @@ button.white{
     font-family: "Roboto";
     font-size: 16px;
     font-weight: 500;
-    border-width: 15px;
+    border-width: 1vw;
     border-style:solid;
     border-color: var(--fondo-);
     font-family: roboto;
@@ -127,7 +126,7 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 60px;
+    padding-top: 80px;
     section{
         width: 74vw;
         display: flex;
@@ -144,12 +143,58 @@ header{
 
     }
     #foto-cliente{
-        width: 34vw;
+        width: 35vw;
+        height: 39vw;
         background-image: url(/midProyect/project-assets/hero-section/hero-image.png);
         background-size: cover;
         img{
-            width: 100px;
+            width: 20vw;
+            background-color: rgba(0,0,0,0);
+                float: right;
         }
 
     }
+}
+
+#partners{
+    width: 74vw;
+    margin: 13vw;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    background-color: rgba(0,0,0,0);
+    img{
+        width: 7vw;
+    }
+}
+#projects{
+    h3{
+        margin-left: 13vw;
+        margin-bottom: 6vw;
+    }
+    #pj{
+        width: 74vw;
+        margin-left: 13vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+.projectSample{
+    background-color: #ffff;
+    width: 23vw;
+    }
+    img{
+        width: 23vw;
+        height: 17vw;
+    }
+    a{
+        text-decoration: none;
+        background-color: #ffff;
+
+    }
+    p{
+        margin-bottom: 1vw;
+        background-color: #ffff;
+    }
+
 }
