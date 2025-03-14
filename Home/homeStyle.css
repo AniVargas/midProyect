@@ -5,53 +5,281 @@
 *{
     margin: 0;
     padding: 0;
+}
+body{
     background-color: var(--fondo-);
 }
 /*Mobil */
 @media (max-width: 500px){
-nav{
-    width: 100vw;
-    height: 50px;
-    position: fixed;
-    display: flex;
-    justify-content:center; 
-    align-items: end;
-    #navbar{
-        height: 100%;
+    nav{
+        background-color: var(--fondo-);
+        width: 100vw;
+        height: 50px;
+        position: fixed;
+        display: flex;
+        justify-content:center; 
+        align-items: end;
+        #navbar{
+            height: 100%;
+            width: 100vw;
+            display: flex;
+            justify-content: space-between;
+            align-items: end;
+        img {
+            width:50px ;  
+            padding-bottom: 1.8vw;
+            padding-left: 1vw;      
+                }
+        ul{
+            display: flex;
+            justify-content: space-between;
+            list-style: none;
+            li{
+                margin-left: 1.8vw;
+                margin-right: 1.8vw;
+                font-family: "Roboto";
+                font-size: 14px;
+                font-weight: 600;
+                padding-bottom: 1vw;
+                #selected{
+                    color:var(--azulfuerte-);
+                    }
+                a{
+                    text-decoration: none;
+                    color:var(--letra-);
+
+                    }
+            }
+        }
+        }
+    }
+    button.blue{
+        background-color: var(--azulfuerte-);
+        color: #ffff;
+        font-family: "Roboto";
+        font-size: 16px;
+        font-weight: 500;
+        border-width: 1vw;
+        border-style:solid;
+        border-color: var(--azulfuerte-);
+        font-family: roboto;
+        align-self: flex-end;
+        white-space: nowrap;
+        }
+    button.white{
+        background-color: var(--fondo-);
+        color:var(--letra-) ;
+        font-family: "Roboto";
+        font-size: 16px;
+        font-weight: 500;
+        border-width: 1vw;
+        border-style:solid;
+        border-color: var(--fondo-);
+        font-family: roboto;
+        align-self: flex-end;
+        }
+
+    header{
         width: 100vw;
         display: flex;
-        justify-content: space-between;
-        align-items: end;
-    img {
-        width:50px ;  
-        padding-left: 15px;
-        padding-bottom: 1vw;      
+        justify-content: center;
+        align-items: center;
+        padding-top: 65px;
+        section{
+            width: 85vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            #copy{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-content: center;
+                width: 90vw;
+                margin-top: 4vw;
+                margin-bottom: 4vw;
+                h1{
+                    font-size: 30px;
+                    margin-bottom: 2vw;
+                }
+                p{
+                    font-size: 16px;
+                    margin-bottom: 5vw;
+                }
+                h1, p, button{
+                    margin-top: 2.5vw;
+                }
+        
             }
-    ul{
+            #foto-cliente{
+                width: 70vw;
+                height: 78vw;
+                background-image: url(/midProyect/project-assets/hero-section/hero-image.png);
+                background-size: cover;
+                img{
+                    width: 20vw;
+                    background-color: rgba(0,0,0,0);
+                        float: right;
+                }
+        
+            }
+        }
+    }
+    #partners{
+        width: 90vw;
+        margin-top: 10vw;
+        margin-bottom: 10vw;
+        margin-left: 5vw;
         display: flex;
         justify-content: space-between;
-        list-style: none;
-        li{
-            margin-left: 1.8vw;
-            margin-right: 1.8vw;
-            font-family: "Roboto";
-            font-size: 16px;
-            font-weight: 500;
-            padding-bottom: 1vw;
+        flex-direction: row;
+        background-color: rgba(0,0,0,0);
+        img{
+            width: 15vw;
+            filter: grayscale(100);
         }
-    
-        a{
-            text-decoration: none;
-            color:var(--letra-);
+    }
+    section.triptic{
+        h3{
+            margin-left: 5vw;
+            margin-bottom: 6vw;
+            font-size: 20px;
+        }
+        .items{
+            width: 90vw;
+            margin-left: 5vw;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            div.article{
+                background-color: white;
+                width: 28vw;
+                height: 55vw;
+                display:flex;
+                flex-direction: column;
+                align-content: space-around;
+                justify-content: space-between;
+                img{
+                    width: 28vw;
+                    height: 20vw;
+                }
+                a{
+                    margin: 1vw;                  
+                    text-decoration: none;
+                    font-size: 14px;
+                }
+                h5{
+                    margin: 1vw; 
+                    font-size: 15px;
+                }
+                p{
+                    margin: 1vw; 
+                    font-size: 14px;
+                }
             }
-            .selected{
-                color:var(--azulfuerte-);
-                  }
+        }
+    }
+    #testimonials{ 
+        margin-top: 10vw;
+        background-color: var(--azuloscuro-);
+        background-image: url(/midProyect/project-assets/testimonial-section/orbit.png);
+        background-size:contain;
+        width: 100vw;
+        height: 60vw;
+        display: flex;
+        flex-direction: row;
+        align-content: space-between;
+        .emojis{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            img{
+                height: 10vw;
+                margin: 5vw;
+            }
+        }
+        .comment{
+            width: 60vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-content: center;
+            h3{
+                color:#ffff;
+                font-size: 16px;
+                text-align: center;
+            }
+            p{
+                font-size: 14px;
+                text-align: center;
+            
+            }
+            #profile{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-content: center;
+                .profilePic{
+                    width: 7vw;
+                    height: 7vw;
+                    border-radius: 80%;
+                    margin-right: 3vw;
+                }
+                #profileName{
+                    width: 15vw;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-content: center;
+                
+                }
+            }
+        }
+    }
+
+    #services{
+    .serviceIcon{
+        width: 10vw;
+        height: 10vw;
+        border-radius: 100%;
     }
     }
 }
-}
-/*compu */
+
+
+
+
+/*button.blue{
+    background-color: var(--azulfuerte-);
+    color: #ffff;
+    font-family: "Roboto";
+    font-size: 14px;
+    font-weight: 500;
+    border-width: 1vw;
+    border-style:solid;
+    border-color: var(--azulfuerte-);
+    font-family: roboto;
+    align-self: flex-end;
+    white-space: nowrap;
+    }
+button.white{
+    background-color: var(--fondo-);
+    color:var(--letra-) ;
+    font-family: "Roboto";
+    font-size: 14px;
+    font-weight: 500;
+    border-width: 1vw;
+    border-style:solid;
+    border-color: var(--fondo-);
+    font-family: roboto;
+    align-self: flex-end;
+    }
+
+
+
+
+/*compu
+
 @media (min-width: 500px){
     nav{
         width: 100vw;
@@ -120,7 +348,7 @@ button.white{
     align-self: flex-end;
     }
 
-/*compu*/
+/*compu
 header{
     width: 100vw;
     display: flex;

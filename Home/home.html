@@ -13,11 +13,11 @@
         <div id="navbar">
         <img id="navbarlogo" src="/midProyect/project-assets/logos/circle.svg" alt="circle-logo">
         <ul>
-            <li class="selected"><a href="#home">Home</a></li>
+            <li><a id="selected" href="#home">Home</a></li>
             <li><a href="#proyects">Proyects</a></li>
             <li><a href="#sevices">Services</a></li>
         </ul>
-        <button class="blue">Contact Us</button>
+        <button class="blue" id="contact">Contact Us</button>
         </div>
     </nav>
 
@@ -44,65 +44,88 @@
             <img src="/midProyect/project-assets/logos/fedex-logo.svg" alt="fedex logo">
             <img src="/midProyect/project-assets/logos/amazon-logo.svg" alt="amazon logo">
     </section>
-    <section id="projects">
+    <section id="projects" class="triptic">
         <div>
             <h3>Recent Projects</h3>
-            <section id="pj">
-                <div class="projectSample">
-                    <img src="/midProyect/project-assets/projects-section/1.jpg" alt="simplify">
-                    <p class="body-mid">Simplify</p>
-                    <p class="headline">UI Design & App Development</p>
-                    <a href="">Learn more</a>
+            <section class="items">
+                <div class="article">
+                    <div>
+                        <img src="/midProyect/project-assets/projects-section/1.jpg" alt="simplify">  
+                        <h5>Simplify</h5>
+                        <p class="headline">UI Design & App Development</p>
+                    </div>
+                    <div>
+                        <a href="">Learn more</a>
+                    </div>
                 </div>
-                <div class="projectSample">
-                    <img src="/midProyect/project-assets/projects-section/2.jpg" alt="Dashcoin">
-                    <p class="body-mid">Dashcoin</p>
-                    <p class="headline">Web Development</p>
-                    <a href="">Learn more</a>
+                <div class="article">
+                    <div>
+                        <img src="/midProyect/project-assets/projects-section/2.jpg" alt="Dashcoin">
+                        <h5>Dashcoin</h5>
+                        <p class="headline">Web Development</p>
+                    </div>
+                    <div>
+                        <a href="">Learn more</a>
+                    </div>
                 </div>
-                <div class="projectSample">
-                    <img src="/midProyect/project-assets/projects-section/3.jpg" alt="Vectorify">
-                    <p class="body-mid">Vectorify</p>
-                    <p class="headline">User Experience Design</p>
-                    <a href="">Learn more</a>
+                <div class="article">
+                    <div>
+                        <img src="/midProyect/project-assets/projects-section/3.jpg" alt="Vectorify">
+                        <h5>Vectorify</h5>
+                        <p class="headline">User Experience Design</p>
+                    </div>
+                    <div>
+                        <a href="">Learn more</a>
+                    </div>
                 </div>
             </section>
         </div>
     </section>
-    <section id="tertimonials">
+    <section id="testimonials">
+    <div class="emojis">
         <img src="/midProyect/project-assets/testimonial-section/memoji-1.png" alt="emoji-crossfinguers">
-        <img src="/midProyect/project-assets/testimonial-section/memoji-2.png" alt="emoji-cup">
-        <img src="/midProyect/project-assets/testimonial-section/memoji-3.png" alt="emoji-tumbsup">
-        <img src="/midProyect/project-assets/testimonial-section/memoji-4.png" alt="emoji-celebrate">
-        <article>
-            <h3>Hear What Our Clients Have to Say</h3>
-            <p>“Circle helped us through every stage of our startup. We really enjoyed working with you.”</p>
-            <div> 
-                <img src="/midProyect/project-assets/testimonial-section/profile.png" alt="happycostummer">
-                <caption>Kristin Watson</caption>
-                <caption>Booking.com</caption>
-            <div></div>
-        </article>
+        <img src="/midProyect/project-assets/testimonial-section/memoji-3.png" alt="emoji-cup">
+    </div> 
+     
+       <section class="comment">
+            <article>
+                <h3>Hear What Our Clients Have to Say</h3>
+            </article>
+            <div id="comment">
+                <p>“Circle helped us through every stage of our startup. We really enjoyed working with you.”</p>
+            </div>
+            <div id="profile">
+                <img class="profilePic" src="/midProyect/project-assets/testimonial-section/profile.png" alt="happycostummer">
+                <div id="profileName">
+                    <caption>Kristin Watson</caption>
+                    <caption>Booking.com</caption>
+                </div>
+            </div>
+        </section>
+        <div class="emojis">
+            <img src="/midProyect/project-assets/testimonial-section/memoji-2.png" alt="emoji-crossfinguers">
+            <img src="/midProyect/project-assets/testimonial-section/memoji-4.png" alt="emoji-cup">
+        </div> 
     </section>
-    <section id="services">
+    <section id="services" class="triptic">
         <div>
             <h3>Our Services</h3>
-            <section>
-                <div>
-                    <img src="/midProyect/project-assets/services-section/icons/1.svg" alt="pen-icon">
-                    <p class="body-mid">User Interface Design</p>
+            <section class="items">
+                <div class="article">
+                    <img class="serviceIcon" src="/midProyect/project-assets/services-section/icons/1.svg" alt="pen-icon">
+                    <h5>User Interface Design</h5>
                     <p>Circle provides you with a stunning user interface design that is accessible to everyone.</p>
                     <a href="">learn more</a>
                 </div>
-                <div>
-                    <img src="/midProyect/project-assets/services-section/icons/2.svg" alt="clic-icon">
-                    <p class="body-mid">User Experience Design</p>
+                <div class="article">
+                    <img class="serviceIcon" src="/midProyect/project-assets/services-section/icons/2.svg" alt="clic-icon">
+                    <h5>User Experience Design</h5>
                     <p>Circle always focuses on delivering the best user experience to your customers.</p>
                     <a href="">learn more</a>
                 </div>
-                <div>
-                    <img src="/midProyect/project-assets/services-section/icons/3.svg" alt="programing-icon">
-                    <p class="body-mid">Application Development</p>
+                <div class="article">
+                    <img class="serviceIcon" src="/midProyect/project-assets/services-section/icons/3.svg" alt="programing-icon">
+                    <h5>Application Development</h5>
                     <p>We develop high-quality mobile and web applications using the latest technology stack.</p>
                     <a href="">learn more</a>
                 </div>
