@@ -1,1 +1,30 @@
-
+html{
+    font-family: "Roboto", sans-serif;
+    color: #6B708D ;
+    font-size: 2vw;
+}
+h1{
+    font-size: 2rem;
+    font-weight: bold;
+    color: #292E47;
+}
+h2{
+    font-size: 50px;
+    font-weight: bold;
+}
+h3{
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #292E47;
+}
+h4{
+    font-size: 24px;
+    font-weight: bold;
+}
+h5{
+    color: #292E47;
+    font-weight: 600;
+}
+p{
+    font-size: 0.8rem;
+}
