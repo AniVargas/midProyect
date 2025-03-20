@@ -10,7 +10,7 @@ body{
     background-color: var(--fondo-);
 }
 /*Mobil */
-@media (max-width: 600px){
+@media (max-width: 700px){
     nav{
         background-color: var(--fondo-);
         width: 100vw;
@@ -55,7 +55,6 @@ body{
     }
     button.blue{
         background-color: var(--azulfuerte-);
-        color: #ffff;
         font-family: "Roboto";
         font-size: 16px;
         font-weight: 500;
@@ -65,6 +64,10 @@ body{
         font-family: roboto;
         align-self: flex-end;
         white-space: nowrap;
+        a{
+            text-decoration: none;
+            color: #ffff;
+        }
         }
     button.white{
         background-color: var(--fondo-);
@@ -345,7 +348,7 @@ body{
 }
 
 
-@media (min-width: 601px){
+@media (min-width: 701px){
     nav{
         background-color: var(--fondo-);
         width: 100vw;
@@ -390,7 +393,6 @@ body{
 
     button.blue{
         background-color: var(--azulfuerte-);
-        color: #ffff;
         font-family: "Roboto";
         font-size: 16px;
         font-weight: 500;
@@ -400,6 +402,11 @@ body{
         font-family: roboto;
         align-self: flex-end;
         white-space: nowrap;
+        a
+        {
+            text-decoration: none;
+            color: #ffff;
+        }
         }
     button.white{
         background-color: var(--fondo-);
