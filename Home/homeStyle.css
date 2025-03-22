@@ -191,6 +191,7 @@ body{
         display: flex;
         flex-direction: row;
         align-content: space-between;
+
         .emojis{
             display: flex;
             flex-direction: column;
@@ -214,7 +215,10 @@ body{
             p{
                 font-size: 14px;
                 text-align: center;
-            
+                .yellow{
+                color: var(--amarillo-);
+                font-weight: 600;
+            }
             }
             #profile{
                 display: flex;
@@ -402,10 +406,11 @@ body{
         font-family: roboto;
         align-self: flex-end;
         white-space: nowrap;
+        color:#ffff;
         a
         {
             text-decoration: none;
-            color: #ffff;
+            color:#ffff
         }
         }
     button.white{
@@ -446,10 +451,18 @@ body{
             height: 39vw;
             background-image: url(/midProyect/project-assets/hero-section/hero-image.png);
             background-size: cover;
-            img{
+            #card{
+                position: absolute;
+                margin-right: 0px;
                 width: 20vw;
                 background-color: rgba(0,0,0,0);
-                    float: right;
+            }
+            #tumsUP{
+                position: absolute;
+                margin-left: 20vw;
+                margin-top: 25vw;
+                width: 20vw;
+                background-color: rgba(0,0,0,0);
             }
         }
     }
@@ -533,6 +546,10 @@ body{
             }
             p{
                 text-align: center;
+                .yellow{
+                    color: var(--amarillo-);
+                    font-weight: 600;
+                } 
             }
             #profile{
                 display: flex;
